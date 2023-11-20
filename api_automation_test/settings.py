@@ -160,16 +160,15 @@ WSGI_APPLICATION = 'api_automation_test.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'api_test',
-        'USER': 'root',
-        'PASSWORD': '123456',
-        # 'HOST': '120.79.232.23',
-        'HOST': 'auto_mysql',
-        'PORT': '3306',
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'test_platform',
+            'USER': 'root',
+            'PASSWORD': '123456',
+            'HOST': '127.0.0.1',
+            'PORT': '3306',
+        }
     }
-}
 
 # DATABASES = {
 #     'default': {
@@ -216,9 +215,9 @@ USE_TZ = False
 # 跨域忽略
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ORIGIN_WHITELIST = (
-    '*'
-)
+# CORS_ORIGIN_WHITELIST = (
+#     '*'
+# )
 
 CORS_ALLOW_METHODS = (
     'DELETE',

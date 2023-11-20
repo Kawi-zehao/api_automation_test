@@ -1,4 +1,5 @@
-from django.conf.urls import url
+# from django.conf.urls import url
+from django.urls import re_path as url
 
 from api_test.api import ApiDoc, automationCase as Case, member, dynamic, user, VisitorRecord, DingManage
 from api_test.api import automationReport as Report
